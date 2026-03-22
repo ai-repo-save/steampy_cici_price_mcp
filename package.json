@@ -1,0 +1,26 @@
+{
+  "name": "steampy-cici-price-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for SteamPY and STEAMCICI game prices",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --check src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-repo-save/steampy_cici_price_mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ai-repo-save/steampy_cici_price_mcp/issues"
+  },
+  "homepage": "https://github.com/ai-repo-save/steampy_cici_price_mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  }
+}
