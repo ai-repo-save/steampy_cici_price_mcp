@@ -45,7 +45,34 @@ npm start
 
 输入参数同上。
 
-## MCP 客户端配置示例（Cursor / Claude Desktop 类似）
+## 适配「仅支持 command」的接入方式（Automations）
+
+如果你的平台不支持 `args` 或本地脚本路径，只能填一个命令，请先把本项目安装成全局命令：
+
+### 方式 A：在仓库目录执行（推荐开发场景）
+
+```bash
+npm install
+npm link
+```
+
+完成后系统里会有一个可执行命令：`steampy-cici-price-mcp`
+
+然后在 Automations 的 MCP 配置里只填：
+
+- `command`: `steampy-cici-price-mcp`
+
+### 方式 B：直接从 GitHub 全局安装（部署场景）
+
+```bash
+npm install -g git+https://github.com/ai-repo-save/steampy_cici_price_mcp.git
+```
+
+然后同样只填：
+
+- `command`: `steampy-cici-price-mcp`
+
+## 其它 MCP 客户端配置示例（支持 command + args 的场景）
 
 ```json
 {

@@ -4,6 +4,9 @@
   "description": "MCP server for SteamPY and STEAMCICI game prices",
   "type": "module",
   "main": "src/index.js",
+  "bin": {
+    "steampy-cici-price-mcp": "./src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js",
     "test": "node --check src/index.js"
